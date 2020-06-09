@@ -20,7 +20,7 @@ def join_nested_strings(src)
  end
    p string_elements
 
- [string_elements.join(" ")]
+ string_elements.join(" ")
 end
 
 
