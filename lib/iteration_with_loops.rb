@@ -16,7 +16,7 @@ def join_nested_strings(src)
    element_index += 1
    end
  # p src[row_index]
-   nested_string_returned << string_elements
+   nested_string_returned << string_elements.join(" ")
    row_index += 1
    
  end
