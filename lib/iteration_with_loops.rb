@@ -7,7 +7,7 @@ def join_nested_strings(src)
   
    while element_index < src[row_index].length do
   
-   #p src[row_index][element_index].is_a?(String)
+   
    if src[row_index][element_index].is_a?(String)
      #p src[row_index][element_index]
     string_elements << src[row_index][element_index]
@@ -16,11 +16,13 @@ def join_nested_strings(src)
    element_index += 1
    end
  # p src[row_index]
+   nested_string_returned << string_elements
    row_index += 1
+   
  end
   # p string_elements
 
- string_elements.join(" ")
+ 
 end
 
 
