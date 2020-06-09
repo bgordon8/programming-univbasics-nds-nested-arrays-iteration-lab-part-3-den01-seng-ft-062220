@@ -3,14 +3,14 @@ def join_nested_strings(src)
    row_index = 0
  while row_index < src.length do
    element_index = 0
+   string_elements = []
   
    while element_index < src[row_index].length do
-   string_elements = []
   
    #p src[row_index][element_index].is_a?(String)
    if src[row_index][element_index].is_a?(String)
      #p src[row_index][element_index]
-    string_elements = string_elements << src[row_index][element_index]
+    string_elements << src[row_index][element_index]
    end
     
    element_index += 1
@@ -18,7 +18,7 @@ def join_nested_strings(src)
  # p src[row_index]
    row_index += 1
  end
-   p string_elements
+  # p string_elements
 
  string_elements.join(" ")
 end
