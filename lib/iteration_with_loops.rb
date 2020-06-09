@@ -10,7 +10,7 @@ def join_nested_strings(src)
    #p src[row_index][element_index].is_a?(String)
    if src[row_index][element_index].is_a?(String)
      #p src[row_index][element_index]
-     string_elements << src[row_index][element_index]
+    string_elements = string_elements << src[row_index][element_index]
    end
     
    element_index += 1
